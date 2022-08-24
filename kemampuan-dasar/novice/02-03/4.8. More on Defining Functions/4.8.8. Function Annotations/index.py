@@ -4,3 +4,6 @@ def f(ham: str, eggs: str = 'eggs') -> str:
      return ham + ' and ' + eggs
 
  f('spam')
+Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}
+Arguments: spam eggs
+'spam and eggs'
