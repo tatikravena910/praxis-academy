@@ -1,0 +1,183 @@
+SQL ( / s k juː l / ( mendengarkan ) SQL , / s iː k w l / " sekuel "; Structured Query Language ) adalah bahasa khusus domain yang digunakan dalam pemrograman dan dirancang untuk mengelola data yang disimpan dalam sistem manajemen basis data relasional (RDBMS), atau untuk pemrosesan aliran dalam sistem manajemen aliran data relasional (RDSMS). Ini sangat berguna dalam menanganidata terstruktur , yaitu data yang menggabungkan hubungan antara entitas dan variabel.
+SQL menawarkan dua keunggulan utama dibandingkan API baca-tulis yang lebih lama seperti ISAM atau VSAM . Pertama, memperkenalkan konsep mengakses banyak catatan dengan satu perintah tunggal. Kedua, menghilangkan kebutuhan untuk menentukan bagaimana mencapai rekor, misalnya dengan atau tanpa indeks.
+Bahasa SQL dibagi lagi menjadi beberapa elemen bahasa, antara lain:
+
+Clauses , adalah komponen penyusun pernyataan dan query. (Dalam beberapa kasus, ini opsional.)
+Ekspresi , yang dapat menghasilkan nilai skalar , atau tabel yang terdiri dari kolom dan baris data
+Predikat , yang menentukan kondisi yang dapat dievaluasi ke logika tiga nilai SQL (3VL) (benar/salah/tidak diketahui) atau nilai kebenaran Boolean dan digunakan untuk membatasi efek pernyataan dan kueri, atau untuk mengubah alur program.
+Query , yang mengambil data berdasarkan kriteria tertentu. Ini adalah elemen penting dari SQL .
+Pernyataan , yang mungkin memiliki efek terus-menerus pada skema dan data, atau dapat mengontrol transaksi , aliran program, koneksi, sesi, atau diagnostik.
+Pernyataan SQL juga menyertakan terminator pernyataan titik koma (";"). Meskipun tidak diperlukan pada setiap platform, ini didefinisikan sebagai bagian standar dari tata bahasa SQL.
+Spasi yang tidak signifikan umumnya diabaikan dalam pernyataan dan kueri SQL, sehingga lebih mudah untuk memformat kode SQL agar mudah dibaca.
+umber	Singkatan	Nama lengkap
+Standar ANSI/ISO	SQL/PSM	Modul Tersimpan SQL/Persisten
+Interbase / Burung Api	PSQL	SQL prosedural
+IBM Db2	SQL PL	Bahasa Prosedur SQL (menerapkan SQL/PSM)
+IBM Informix	SPL	Bahasa Prosedur Tersimpan
+IBM Netezza	NZPLSQL [18]	(berdasarkan Postgres PL/pgSQL)
+Innovatif	PSQL [19]	SQL Prosedural Invantive (menerapkan SQL/PSM dan PL/SQL )
+MariaDB	SQL/PSM , PL/SQL	SQL/Persistent Stored Module (menerapkan SQL/PSM), Bahasa Prosedural/SQL (berdasarkan Ada ) [20]
+Microsoft / Sybase	T-SQL	Transact-SQL
+Mimer SQL	SQL/PSM	SQL/Persistent Stored Module (menerapkan SQL/PSM)
+MySQL	SQL/PSM	SQL/Persistent Stored Module (menerapkan SQL/PSM)
+MonetDB	SQL/PSM	SQL/Persistent Stored Module (menerapkan SQL/PSM)
+NuoDB	SSP	Prosedur Tersimpan Starkey
+Peramal	PL/SQL	Bahasa Prosedural/SQL (berdasarkan Ada )
+PostgreSQL	PL/pgSQL	Bahasa Prosedural/Bahasa Kueri Terstruktur PostgreSQL (berdasarkan PL/SQL yang dikurangi )
+SAP R/3	ABAP	Pemrograman Aplikasi Bisnis Tingkat Lanjut
+SAP HANA	Skrip SQL	Skrip SQL
+sybase	Watcom-SQL	SQL Anywhere Watcom-SQL Dialek
+Teradata	SPL	Bahasa Prosedur Tersimpan
+Selain ekstensi SQL/PSM standar dan ekstensi SQL berpemilik, programabilitas prosedural dan berorientasi objek tersedia di banyak platform SQL melalui integrasi DBMS dengan bahasa lain. Standar SQL mendefinisikan ekstensi SQL/JRT (SQL Routines and Types for Java Programming Language) untuk mendukung kode Java dalam database SQL. Microsoft SQL Server 2005 menggunakan SQLCLR (SQL Server Common Language Runtime) untuk menghosting rakitan .NET terkelola dalam database , sementara versi SQL Server sebelumnya dibatasi untuk prosedur tersimpan diperpanjang yang tidak dikelola, terutama ditulis dalam C. PostgreSQLmemungkinkan pengguna menulis fungsi dalam berbagai bahasa—termasuk Perl , Python , Tcl , JavaScript (PL/V8) dan C. 
+Perbedaan harus dibuat antara alternatif SQL sebagai bahasa, dan alternatif model relasional itu sendiri. Di bawah ini adalah alternatif relasional yang diusulkan untuk bahasa SQL. Lihat database navigasi dan NoSQL untuk alternatif model relasional.
+
+.QL : Datalog berorientasi objek
+Bahasa Kueri 4D (4D QL)
+Datalog : kritikus menyarankan bahwa Datalog memiliki dua keunggulan dibandingkan SQL: memiliki semantik yang lebih bersih, yang memfasilitasi pemahaman dan pemeliharaan program, dan lebih ekspresif, khususnya untuk kueri rekursif. [43]
+HTTP : Metode kueri berbasis URL
+IBM Business System 12 (IBM BS12): salah satu sistem manajemen basis data relasional pertama, diperkenalkan pada tahun 1982
+ISBL
+jOOQ : SQL diimplementasikan di Java sebagai bahasa khusus domain internal
+Java Persistence Query Language (JPQL): Bahasa kueri yang digunakan oleh Java Persistence API dan Hibernate persistent library
+JavaScript : MongoDB mengimplementasikan bahasa kuerinya dalam API JavaScript.
+LINQ : Menjalankan pernyataan SQL yang ditulis seperti konstruksi bahasa untuk meminta koleksi langsung dari dalam .Net code
+Bahasa Kueri Objek
+QBE ( Query By Example ) dibuat oleh Mosh Zloof, IBM 1977
+QUEL diperkenalkan pada tahun 1974 oleh proyek UC Berkeley Ingres, lebih dekat ke kalkulus relasional tuple daripada SQL
+Tutorial D
+Permintaan X
+Standar SQL mendefinisikan tiga jenis tipe data : [ rujukan? ]
+
+tipe data yang telah ditentukan sebelumnya
+tipe yang dibangun
+jenis yang ditentukan pengguna.
+Tipe yang dibangun adalah salah satu dari ARRAY, MULTISET, REF(erence), atau ROW. Tipe yang ditentukan pengguna sebanding dengan kelas dalam bahasa berorientasi objek dengan konstruktor, pengamat, mutator, metode, pewarisan, kelebihan beban, penimpaan, antarmuka, dan sebagainya mereka sendiri. Tipe data yang telah ditentukan secara intrinsik didukung oleh implementasi.
+
+Tipe data standar 
+Tipe karakter
+Karakter (CHAR)
+Karakter bervariasi (VARCHAR)
+Karakter objek besar (CLOB)
+Jenis karakter nasional
+Karakter bangsa (NCHAR)
+Karakter bangsa yang bervariasi (NCHAR VARYING)
+Objek besar karakter nasional (NCLOB)
+Tipe biner
+Biner (BINARY)
+Variasi biner (VARBINARY)
+Objek besar biner (BLOB)
+Tipe numerik
+Jenis numerik yang tepat (NUMERIK, DECIMAL, SMALLINT, INTEGER, BIGINT)
+Perkiraan tipe numerik (FLOAT, REAL, DOUBLE PRECISION)
+Tipe titik-mengambang desimal (DECFLOAT)
+Jenis tanggal waktu (TANGGAL, WAKTU, TIMESTAMP)
+Jenis interval (INTERVAL)
+Boolean
+XML
+JSON
+
+
+DCL
+Bahasa kontrol data ( DCL ) adalah sintaks yang mirip dengan bahasa pemrograman komputer yang digunakan untuk mengontrol akses ke data yang disimpan dalam database ( otorisasi ). Secara khusus, ini adalah komponen dari Structured Query Language (SQL). Bahasa Kontrol Data adalah salah satu kelompok logis dalam Perintah SQL. SQL [1] adalah bahasa standar untuk sistem manajemen basis data relasional. Pernyataan SQL digunakan untuk melakukan tugas-tugas seperti memasukkan data ke database, menghapus atau memperbarui data dalam database, atau mengambil data dari database.
+
+Meskipun sistem basis data menggunakan SQL, mereka juga memiliki ekstensi kepemilikan tambahan yang biasanya hanya digunakan pada sistem mereka. Misalnya Microsoft SQL server menggunakan Transact-SQL (T-SQL) yang merupakan kepanjangan dari SQL. Demikian pula Oracle menggunakan PL-SQL yang merupakan ekstensi eksklusif untuk mereka saja. Namun, perintah SQL standar seperti "Select", "Insert", "Update", "Delete", "Create", dan "Drop" dapat digunakan untuk menyelesaikan hampir semua hal yang perlu dilakukan dengan database.
+
+Contoh perintah DCL meliputi:
+
+HIBAH untuk mengizinkan pengguna tertentu melakukan tugas tertentu.
+REVOKE untuk menghapus aksesibilitas pengguna ke objek database.
+Operasi yang hak istimewanya dapat diberikan atau dicabut dari pengguna atau peran berlaku untuk bahasa definisi Data (DDL) dan bahasa manipulasi Data (DML), dan mungkin termasuk CONNECT , SELECT , INSERT , UPDATE, DELETE , EXECUTE , dan PENGGUNAAN .
+Sesuai Microsoft SQL server ada empat kelompok Perintah SQL. (MSSQL)
+
+Bahasa Manipulasi Data (DML)
+Bahasa Definisi Data (DDL)
+Bahasa Kontrol Data (DCL [2] )
+Bahasa Kontrol Transaksi (TCL)
+Perintah DCL digunakan untuk kontrol akses dan manajemen izin untuk pengguna dalam database. Dengan mereka kami dapat dengan mudah mengizinkan atau menolak beberapa tindakan untuk pengguna pada tabel atau catatan (keamanan tingkat baris).
+
+Perintah DCL adalah:
+
+MENGANUGERAHKAN
+Kami dapat memberikan izin tertentu untuk tabel (dan objek lain) untuk grup/pengguna database tertentu.
+MEMBANTAH
+melarang izin tertentu dari grup/pengguna.
+MENARIK KEMBALI
+perintah ini menghilangkan izin dari grup/pengguna.
+Misalnya: GRANT dapat digunakan untuk memberikan hak istimewa kepada pengguna untuk melakukan SELECT, INSERT, UPDATE dan DELETE pada tabel tertentu atau beberapa tabel.
+
+Perintah REVOKE digunakan untuk mengambil kembali hak istimewa (default) atau mencabut perintah tertentu seperti UPDATE atau DELETE berdasarkan persyaratan.
+
+DDL
+Dalam konteks SQL , definisi data atau bahasa deskripsi data ( DDL ) adalah sintaks untuk membuat dan memodifikasi objek database seperti tabel, indeks, dan pengguna. Pernyataan DDL mirip dengan bahasa pemrograman komputer untuk mendefinisikan struktur data , terutama skema database . Contoh umum pernyataan DDL termasuk CREATE, ALTER, dan DROP.
+Banyak bahasa deskripsi data menggunakan sintaks deklaratif untuk mendefinisikan kolom dan tipe data. Structured Query Language (SQL), bagaimanapun, menggunakan kumpulan kata kerja imperatif yang efeknya adalah untuk memodifikasi skema database dengan menambahkan, mengubah, atau menghapus definisi tabel atau elemen lainnya. Pernyataan ini dapat dicampur dengan bebas dengan pernyataan SQL lainnya, membuat DDL bukan bahasa yang terpisah.
+BUAT pernyataan 
+Perintah create digunakan untuk membuat database, tabel, indeks, atau prosedur tersimpan baru .
+
+Pernyataan CREATE dalam SQL membuat komponen dalam sistem manajemen basis data relasional (RDBMS). Dalam spesifikasi SQL 1992, jenis komponen yang dapat dibuat adalah skema, tabel , tampilan , domain, kumpulan karakter , susunan , terjemahan, dan pernyataan. [2] Banyak implementasi memperluas sintaks untuk memungkinkan pembuatan elemen tambahan, seperti indeks dan profil pengguna. Beberapa sistem, seperti PostgreSQL dan SQL Server , mengizinkan CREATE , dan perintah DDL lainnya, di dalam transaksi basis datadan dengan demikian mereka dapat digulung kembali . [3] [4]
+
+pernyataan CREATE TABLE 
+Perintah CREATE yang umum digunakan adalah perintah CREATE TABLE . Penggunaan yang khas adalah:
+
+BUAT TABEL [nama tabel] ( [definisi kolom] ) [parameter tabel]
+Definisi kolom adalah:
+
+Daftar yang dipisahkan koma yang terdiri dari salah satu dari berikut ini:
+Definisi kolom: [nama kolom] [tipe data] {NULL | NOT NULL} {opsi kolom}
+Definisi kunci utama : KUNCI UTAMA ( [daftar kolom yang dipisahkan koma] )
+Batasan: {CONSTRAINT} [definisi kendala]
+Fungsionalitas khusus RDBMS
+Contoh statement untuk membuat tabel bernama employee dengan beberapa kolom adalah:
+
+CREATE  TABLE  employee  ( 
+    id             INTEGER        PRIMARY  KEY , 
+    first_name     VARCHAR ( 50 )    not  null , 
+    last_name      VARCHAR ( 75 )    not  null , 
+    mid_name       VARCHAR ( 50 )    not  null , 
+    dateofbirth    DATE           not  null 
+);
+Beberapa bentuk CREATE TABLE DDL dapat menggabungkan konstruksi seperti DML ( bahasa manipulasi data ), seperti sintaks SQL CREATE TABLE AS SELECT (CTaS). [5]
+
+DROP pernyataan 
+Pernyataan DROP menghancurkan database, tabel, indeks, atau tampilan yang ada.
+
+Pernyataan DROP dalam SQL menghapus komponen dari sistem manajemen basis data relasional (RDBMS). Jenis objek yang dapat dijatuhkan tergantung pada RDBMS mana yang digunakan, tetapi sebagian besar mendukung penghapusan tabel , pengguna , dan database . Beberapa sistem (seperti PostgreSQL ) memungkinkan DROP dan perintah DDL lainnya terjadi di dalam transaksi dan dengan demikian dibatalkan . Penggunaan tipikal hanyalah:
+
+DROP objecttype  objectname .
+Misalnya, perintah untuk menjatuhkan tabel bernama karyawan adalah:
+
+ karyawan DROP TABLE  ;
+Pernyataan DROP berbeda dari pernyataan DELETE dan TRUNCATE , karena DELETE dan TRUNCATE tidak menghapus tabel itu sendiri. Misalnya, pernyataan DELETE mungkin menghapus beberapa (atau semua) data dari tabel sementara meninggalkan tabel itu sendiri dalam database, sedangkan pernyataan DROP menghapus seluruh tabel dari database.
+
+ALTER pernyataan 
+Pernyataan ALTER memodifikasi objek database yang ada.
+
+Pernyataan ALTER dalam SQL mengubah properti objek di dalam sistem manajemen basis data relasional (RDBMS). Jenis objek yang dapat diubah tergantung pada RDBMS yang digunakan. Penggunaan yang khas adalah:
+
+ALTER parameter objecttype  objectname  .
+Misalnya, perintah untuk menambahkan (lalu menghapus) kolom bernama gelembung untuk tabel yang ada bernama sink adalah:
+
+ALTER  TABLE  wastafel  TAMBAHKAN  gelembung  INTEGER ; 
+ALTER  TABLE  sink  DROP  COLUMN  gelembung ;
+Pernyataan TRUNCATE 
+Pernyataan TRUNCATE digunakan untuk menghapus semua data dari tabel. Ini jauh lebih cepat daripada DELETE .
+
+TRUNCATE  TABLE  table_name ;
+Pernyataan integritas referensial 
+Jenis lain dari kalimat DDL dalam SQL digunakan untuk mendefinisikan hubungan integritas referensial , biasanya diimplementasikan sebagai kunci utama dan tag kunci asing di beberapa kolom tabel. Kedua pernyataan ini dapat dimasukkan dalam kalimat CREATE TABLE atau ALTER TABLE ;
+
+
+
+DML
+Bahasa manipulasi data ( DML ) adalah bahasa pemrograman komputer yang digunakan untuk menambah (menyisipkan), menghapus, dan memodifikasi (memperbarui) data dalam database . DML sering merupakan subbahasa dari bahasa database yang lebih luas seperti SQL , dengan DML terdiri dari beberapa operator dalam bahasa tersebut. [1] Pemilihan data read -only terkadang dibedakan sebagai bagian dari bahasa kueri data (DQL) yang terpisah, tetapi ini terkait erat dan terkadang juga dianggap sebagai komponen DML; beberapa operator dapat melakukan pemilihan (membaca) dan menulis.
+
+Bahasa manipulasi data yang populer adalah Structured Query Language (SQL), yang digunakan untuk mengambil dan memanipulasi data dalam database relasional . [2] Bentuk lain dari DML adalah yang digunakan oleh IMS /DLI, database CODASYL , seperti IDMS dan lain-lain.
+
+DQL
+Data Query Language ( DQL ) adalah bagian dari pengelompokan dasar sub-bahasa SQL . Sub-bahasa ini terutama dikategorikan ke dalam empat kategori: bahasa kueri data (DQL), bahasa definisi data (DDL), bahasa kontrol data (DCL), dan bahasa manipulasi data (DML). Kadang-kadang bahasa kontrol transaksi (TCL) dianggap sebagai bagian dari himpunan sub-bahasa juga.
+
+Pernyataan DQL digunakan untuk melakukan kueri pada data dalam objek skema. Tujuan dari perintah DQL adalah untuk mendapatkan hubungan skema berdasarkan kueri yang diteruskan ke sana.
+
+Meskipun sering dianggap sebagai bagian dari DML, pernyataan SQL SELECT secara tegas merupakan contoh DQL. Saat menambahkan manipulator data FROM atau WHERE ke pernyataan SELECT, pernyataan tersebut kemudian dianggap sebagai bagian dari DML.
+
+Bahasa terkait 
+

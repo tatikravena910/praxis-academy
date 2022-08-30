@@ -1,0 +1,54 @@
+
+Sebuah model database adalah jenis model data yang menentukan struktur logis dari database . Ini pada dasarnya menentukan cara data dapat disimpan, diatur, dan dimanipulasi. Contoh paling populer dari model database adalah model relasional , yang menggunakan format berbasis tabel.
+Model data logis umum untuk database meliputi:
+
+Model basis data hierarkis
+Ini adalah bentuk tertua dari model basis data. Ini dikembangkan oleh IBM untuk IMS (Sistem Manajemen Informasi). Ini adalah satu set data terorganisir dalam struktur pohon. Catatan DB adalah pohon yang terdiri dari banyak kelompok yang disebut segmen. Ini menggunakan hubungan satu ke banyak. Akses data juga dapat diprediksi.
+Model jaringan
+Model relasional
+Model hubungan entitas
+Model hubungan entitas yang disempurnakan
+Model objek
+Model dokumen
+Model entitas–atribut–nilai
+Skema bintang
+Sebuah database objek-relasional menggabungkan dua struktur terkait.
+
+Model data fisik meliputi:
+
+Indeks terbalik
+File datar
+Model lainnya termasuk:
+
+Model korelasional
+Model multidimensi
+Model multinilai
+Model semantik
+basis data XML
+Grafik bernama
+Toko tiga
+
+
+Normalisasi basis data adalah proses penataan basis data relasional sesuai dengan serangkaian yang disebut bentuk normal untuk mengurangi redundansi data dan meningkatkan integritas data . Ini pertama kali diusulkan oleh Edgar F. Codd sebagai bagian dari model relasionalnya .
+
+Normalisasi memerlukan pengorganisasian kolom (atribut) dan tabel (relasi) dari database untuk memastikan bahwa ketergantungan mereka ditegakkan dengan benar oleh batasan integritas database. Hal ini dicapai dengan menerapkan beberapa aturan formal baik dengan proses sintesis (membuat desain database baru) atau dekomposisi (meningkatkan desain database yang sudah ada).
+Tujuan dasar dari bentuk normal pertama yang didefinisikan oleh Codd pada tahun 1970 adalah untuk mengizinkan data ditanyakan dan dimanipulasi menggunakan "subbahasa data universal" yang didasarkan pada logika orde pertama . [1] ( SQL adalah contoh dari sub-bahasa data, meskipun salah satu yang dianggap Codd sebagai cacat serius. [2] )
+
+Tujuan dari normalisasi di luar 1NF (first normal form) dikemukakan oleh Codd sebagai berikut:
+
+Untuk membebaskan kumpulan relasi dari ketergantungan penyisipan, pembaruan, dan penghapusan yang tidak diinginkan.
+Untuk mengurangi kebutuhan untuk merestrukturisasi kumpulan relasi, ketika tipe data baru diperkenalkan, dan dengan demikian meningkatkan masa pakai program aplikasi.
+Untuk membuat model relasional lebih informatif bagi pengguna.
+Untuk membuat kumpulan relasi netral terhadap statistik kueri, di mana statistik ini dapat berubah seiring berjalannya waktu.
+—  EF Codd, "Normalisasi Lebih Lanjut dari Model Relasional Basis Data" [3]
+
+Sebuah anomali pembaruan . Karyawan 519 ditampilkan memiliki alamat yang berbeda pada catatan yang berbeda.
+
+Anomali penyisipan . Sampai anggota fakultas baru, Dr. Newsome, ditugaskan untuk mengajar setidaknya satu mata kuliah, rincian mereka tidak dapat direkam.
+
+Anomali penghapusan . Semua informasi tentang Dr. Giddens hilang jika mereka untuk sementara berhenti ditugaskan ke kursus apa pun.
+Ketika upaya dilakukan untuk memodifikasi (memperbarui, menyisipkan, atau menghapus dari) suatu relasi, efek samping yang tidak diinginkan berikut mungkin timbul dalam relasi yang belum cukup dinormalisasi:
+
+Perbarui anomali. Informasi yang sama dapat diekspresikan pada beberapa baris; oleh karena itu pembaruan pada relasi dapat mengakibatkan inkonsistensi logis. Misalnya, setiap record dalam relasi "Keterampilan Karyawan" mungkin berisi ID Karyawan, Alamat Karyawan, dan Keahlian; sehingga perubahan alamat untuk karyawan tertentu mungkin perlu diterapkan ke beberapa catatan (satu untuk setiap keterampilan). Jika pembaruan hanya berhasil sebagian – alamat karyawan diperbarui pada beberapa catatan tetapi tidak pada yang lain – maka relasi dibiarkan dalam keadaan tidak konsisten. Secara khusus, relasi tersebut memberikan jawaban yang bertentangan atas pertanyaan tentang alamat karyawan tertentu tersebut.
+Anomali penyisipan. Ada keadaan di mana fakta-fakta tertentu tidak dapat dicatat sama sekali. Misalnya, setiap record dalam relasi "Fakultas dan Kursusnya" mungkin berisi ID Fakultas, Nama Fakultas, Tanggal Perekrutan Fakultas, dan Kode Kursus. Oleh karena itu, rincian setiap anggota fakultas yang mengajar setidaknya satu mata kuliah dapat dicatat, tetapi seorang anggota fakultas yang baru direkrut yang belum ditugaskan untuk mengajar mata kuliah apa pun tidak dapat dicatat, kecuali dengan menyetel Kode Mata kuliah ke null .
+Anomali penghapusan. Dalam keadaan tertentu, penghapusan data yang mewakili fakta tertentu memerlukan penghapusan data yang mewakili fakta yang sama sekali berbeda. Hubungan "Fakultas dan Mata Kuliahnya" yang dijelaskan dalam contoh sebelumnya mengalami jenis anomali ini, karena jika seorang anggota fakultas untuk sementara berhenti ditugaskan ke mata kuliah apa pun, catatan terakhir yang menampilkan anggota fakultas tersebut harus dihapus, secara efektif juga menghapus anggota fakultas, kecuali bidang Kode Kursus disetel ke nol.
