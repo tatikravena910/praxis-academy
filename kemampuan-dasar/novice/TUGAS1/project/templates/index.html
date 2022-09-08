@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+    
+</head> 
+<body>
+    <div>
+        <h1> Data Santri PPQS </h1>
+        <form action="" method="post">
+            <label for="">nama</label>
+            <input name="nama" type="text" required>
+            <label for="">umur</label>
+            <input name="umur" type="date" required>
+            <label for="">asal</label>
+            <input name="asal" type="text" required>
+            <label for="">pendidikan</label>
+            <input name="pendidikan" type="text" required>
+            <button type="submit">kirim</button>
+
+        </form>
+        
+        <hr>
+        <h1>ini respons</h1>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>nama</th>
+                <th>umur</th>
+                <th>asal</th>
+                <th>pendidikan</th>
+            </tr>
+            {% for d in context %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{d[1]}}</td>
+                <td>{{d[2]}}</td>
+                <td>{{d[3]}}</td>
+                <td>{{d[4]}}</td>
+                <td>
+                    <a href="/delete/{{d[0]}}">
+                        <button class="btn btn-danger">delete</button>
+                    </a>
+                </td> -->
+            </tr>
+            {% endfor %}
+        </table>
+            
+    
+    </div>
+ </body>
+</html>
